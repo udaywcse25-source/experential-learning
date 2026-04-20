@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Tools Inc.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div><strong>Precision Tools Inc.</strong></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Engineering Precision. Delivering Excellence.</h1>
+        <p>Your trusted partner in high-quality manufacturing tools.</p>
+        <button onclick="scrollToContact()">Get in Touch</button>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <h2>Meet the Team</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://nursinginstitutegoa.org/wp-content/uploads/2016/01/tutor-8.jpg" alt="Team member">
+                <h3>John Doe</h3>
+                <p>CEO</p>
+            </div>
+            <div class="card">
+                <img src="https://d2kweb0losujyt.cloudfront.net/static/main/assets/images/img_coach_card_james_2.png" alt="Team member">
+                <h3>Jane Smith</h3>
+                <p>Lead Engineer</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQheJgRaG5MhTObl3YM56aIQoaARU2KZUOVyA&s" alt="Team member">
+                <h3>Mike Brown</h3>
+                <p>Production Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+
+</html>
