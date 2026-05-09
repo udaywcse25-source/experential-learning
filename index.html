@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experential learning..</title>
+    <title>Precision Tools Inc.</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -13,6 +17,7 @@
     <!-- Navbar -->
     <nav>
         <div><strong>Precision Tools Inc.</strong></div>
+
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#team">Team</a></li>
@@ -23,52 +28,66 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <h2>Engineering Precision. Delivering Excellence.</h2>
-        <p>Your trusted partner in high-quality manufacturing tools.</p>
-        <button id="contactBtn">Get in Touch</button>
-    </section>
 
-    <!-- Login Section -->
-    <section class="login" id="login">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-            <button type="button" id="registerBtn">Register</button>
-        </form>
+        <p>Your trusted partner in high-quality manufacturing tools.</p>
+
+        <button id="contactBtn">Get in Touch</button>
     </section>
 
     <!-- Team Section -->
     <section class="team" id="team">
+
         <h2>Meet the Team</h2>
+
         <div class="cards">
+
             <div class="card">
-                <img src="https://nursinginstitutegoa.org/wp-content/uploads/2016/01/tutor-8.jpg" alt="Team member">
+                <img src="https://nursinginstitutegoa.org/wp-content/uploads/2016/01/tutor-8.jpg">
+
                 <h3>John Doe</h3>
+
                 <p>CEO</p>
             </div>
+
             <div class="card">
-                <img src="https://d2kweb0losujyt.cloudfront.net/static/main/assets/images/img_coach_card_james_2.png" alt="Team member">
+                <img src="https://d2kweb0losujyt.cloudfront.net/static/main/assets/images/img_coach_card_james_2.png">
+
                 <h3>Jane Smith</h3>
+
                 <p>Lead Engineer</p>
             </div>
+
             <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQheJgRaG5MhTObl3YM56aIQoaARU2KZUOVyA&s" alt="Team member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQheJgRaG5MhTObl3YM56aIQoaARU2KZUOVyA&s">
+
                 <h3>Mike Brown</h3>
+
                 <p>Production Manager</p>
             </div>
+
         </div>
+
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
+
         <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="submit">Send Message</button>
+
+        <form id="contactForm">
+
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="submit">
+                Send Message
+            </button>
+
         </form>
+
     </section>
 
     <script src="script.js"></script>
